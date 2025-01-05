@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 45 40% 98%;
+  --foreground: 45 40% 10%;
+  --card: 45 40% 100%;
+  --card-foreground: 45 40% 10%;
+  --popover: 45 40% 100%;
+  --popover-foreground: 45 40% 10%;
+  --primary: 38 92% 50%;
+  --primary-foreground: 45 40% 10%;
+  --secondary: 45 40% 96%;
+  --secondary-foreground: 45 40% 10%;
+  --muted: 45 40% 96%;
+  --muted-foreground: 45 40% 50%;
+  --accent: 45 40% 96%;
+  --accent-foreground: 45 40% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 45 40% 98%;
+  --border: 45 40% 90%;
+  --input: 45 40% 90%;
+  --ring: 38 92% 50%;
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 45 40% 10%;
+  --foreground: 45 40% 98%;
+  --card: 45 40% 10%;
+  --card-foreground: 45 40% 98%;
+  --popover: 45 40% 10%;
+  --popover-foreground: 45 40% 98%;
+  --primary: 38 92% 50%;
+  --primary-foreground: 45 40% 10%;
+  --secondary: 45 40% 30%;
+  --secondary-foreground: 45 40% 98%;
+  --muted: 45 40% 30%;
+  --muted-foreground: 45 40% 60%;
+  --accent: 45 40% 30%;
+  --accent-foreground: 45 40% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 45 40% 98%;
+  --border: 45 40% 30%;
+  --input: 45 40% 30%;
+  --ring: 38 92% 50%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.golden-glow {
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.golden-glow:hover {
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+}
